@@ -1,0 +1,16 @@
+footer {
+    background-color: #19191a; 
+  }
+  
+  footer p {
+    margin: 5px 0;
+    font-size: 12px; 
+  }
+  
+
+  @media (max-width: 768px) {
+   
+    footer p {
+      font-size: 5px; 
+    }
+  }

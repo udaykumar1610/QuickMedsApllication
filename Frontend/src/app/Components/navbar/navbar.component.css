@@ -1,0 +1,6 @@
+.navbar .nav-link.active {
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgb(13, 164, 184);
+   
+}
