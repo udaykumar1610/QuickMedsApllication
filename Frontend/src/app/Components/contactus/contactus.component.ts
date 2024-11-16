@@ -13,18 +13,14 @@ export class ContactusComponent {
  
   emailaddress= "support@gmail.com";
  
-   contactForm = {
-   
-       name: '',
-       email: '',
-       message: ''
-     
-   };
- 
+  
    onSubmit() {
-     console.log('Form Submitted:', this.contactForm);
-     // Add logic to handle form submission like sending it to a server
-     alert("message sent successfully")
+     
+     
+     alert("We received your feedBack  successfully");
+     this.name= '';
+     this.email= '',
+    this.message='';
    }
 
 }

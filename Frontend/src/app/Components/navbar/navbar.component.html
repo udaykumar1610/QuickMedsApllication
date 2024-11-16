@@ -50,16 +50,20 @@
             <li class="nav-item">
                 <a *ngIf="!loginService.isLoggedIn()" routerLink="/user/login" routerLinkActive="active" role="button"
                     class="btn btn-outline-success">Login</a>
-            </li>
+            </li>&nbsp;&nbsp;
 
-            <li class="nav-item mr-1">
-                <a class="btn btn-link" *ngIf="loginService.isLoggedIn()" role="button" (click)="profile()"><b>Profile</b></a>
-            </li>
+            <li class="nav-item ">
+                <a *ngIf="loginService.isLoggedIn()"  class="btn btn-info" routerLinkActive="active" (click)="profile()"><b>Profile</b></a>
+            </li>&nbsp;&nbsp;
+            
 
             <li class="nav-item">
-                <a class="btn btn-info"  role="button" (click)="adminLogin()">Admin Login</a>
-            </li>
+                <a class="btn btn-info" *ngIf="loginService.isLoggedIn()"   role="button" (click)="adminLogin()">Admin Login</a>
+            </li>&nbsp;&nbsp;
            
+
+           
+            
             <li class="nav-item">
                 <a class="btn btn-info" *ngIf="loginService.isLoggedIn()" role="button" (click)="logout()">Logout</a>
             </li>

@@ -25,6 +25,7 @@ const routes: Routes = [
   { path: 'user/login', component: UserLoginComponent, pathMatch: 'full', title: 'User Login' },
   { path: 'admin/login', component: AdminLoginComponent, pathMatch: 'full', title: 'Admin Login' },
   { path: 'home', component: HomeComponent, pathMatch: 'full', title: 'QUickMeds' },
+  { path: '', component: HomeComponent, pathMatch: 'full', title: 'QUickMeds' },
   { path: 'user-home', component: UserHomeComponent, canActivate: [UserGuard], pathMatch: 'full', title: 'Home' },
   { path: 'admin-dashboard', component: AdminDashboardComponent, canActivate: [AdminGuard], pathMatch: 'full', title: 'Admin Dashboard' },
   { path: 'user/signup', component: UserSignupComponent, pathMatch: 'full', title: 'User Registration' },
