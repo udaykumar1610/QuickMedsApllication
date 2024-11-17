@@ -1,10 +1,10 @@
-package com.medicare;
+package com.quickMeds;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MedicareBackendApplicationTests {
+class QuickMedsBackendApplicationTests {
 
 	@Test
 	void contextLoads() {
